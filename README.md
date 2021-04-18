@@ -1,2 +1,3 @@
 # Morning-activity
-朝活
+朝活です。
+CTFのソルバーを中心に作りたいです。
