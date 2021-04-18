@@ -13,19 +13,12 @@ int main()
     {
         for (k = 0; k < i; k++)
         {
-            if (caesar[k] == 'z')
+            if (caesar[k] == 'z' || caesar[k] == 'Z')
             {
-                caesar[k] = 'a';
+                caesar[k] = caesar[k] - 25;
                 printf("%c", caesar[k]);
-                continue;
             }
-            else if (caesar[k] == 'Z')
-            {
-                caesar[k] = 'A';
-                printf("%c", caesar[k]);
-                continue;
-            }
-            if ('a' <= caesar[k] && 'z' > caesar[k] || 'A' <= caesar[k] && 'Z' > caesar[k])
+            else if ('a' <= caesar[k] && 'z' > caesar[k] || 'A' <= caesar[k] && 'Z' > caesar[k])
             {
                 caesar[k] = caesar[k] + 1;
                 printf("%c", caesar[k]);
@@ -33,7 +26,6 @@ int main()
             else
             {
                 printf("%c", caesar[k]);
-                continue;
             }
         }
         printf("\n");
