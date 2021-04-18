@@ -25,12 +25,7 @@ int main()
                 printf("%c", caesar[k]);
                 continue;
             }
-            if ('a' <= caesar[k] && 'z' > caesar[k])
-            {
-                caesar[k] = caesar[k] + 1;
-                printf("%c", caesar[k]);
-            }
-            else if ('A' <= caesar[k] && 'Z' > caesar[k])
+            if ('a' <= caesar[k] && 'z' > caesar[k] || 'A' <= caesar[k] && 'Z' > caesar[k])
             {
                 caesar[k] = caesar[k] + 1;
                 printf("%c", caesar[k]);
@@ -43,5 +38,4 @@ int main()
         }
         printf("\n");
     }
-    printf("%s", caesar);
 }
